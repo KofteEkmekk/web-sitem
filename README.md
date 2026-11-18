@@ -1,7 +1,8 @@
-# İnan — Kişisel Web Sitem
-# Ad-Soyad — Kamuran İnan Aydoğan
-# Öğrenci Numaram — 25905011
-# Bölüm — Yazılım Geliştirme
+## İnan — Kişisel Web Sitem
+## Ad-Soyad — Kamuran İnan Aydoğan
+## Öğrenci Numaram — 25905011
+## Bölüm — Yazılım Geliştirme
+## Site Linki — https://kofteekmekk.github.io/web-sitem/
 
 ## Açma
 `index.html` dosyasını tarayıcıda açman yeterli.
