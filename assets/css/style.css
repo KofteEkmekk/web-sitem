@@ -1,4 +1,5 @@
 :root{
+/* Genel renkler, yazı tipleri ve animasyon eğrisi */
  --paper:#f6f5f1;--white:#fffefa;--milk:#eeede7;--line:#deddd6;
  --ink:#22231f;--muted:#777970;--soft:#a5a69d;--accent:#7d8877;
  --serif:Georgia,serif;--sans:'DM Sans',sans-serif;--display:'Manrope',sans-serif;
@@ -8,6 +9,7 @@
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}button{font:inherit}
 ::selection{background:#dce1d7;color:#252820}
+/* Açılış ön yükleyicisi ve merkezdeki logo animasyonu */
 .preloader{position:fixed;inset:0;z-index:2000;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#fffefa 0%,#f6f5f1 57%,#eeede7 100%);opacity:1;visibility:visible;transition:opacity .7s var(--ease),visibility .7s var(--ease)}
 .preloader:before,.preloader:after{content:"";position:absolute;pointer-events:none;border:1px solid #deddd680;border-radius:50%}
 .preloader:before{width:min(76vw,720px);aspect-ratio:1;animation:loaderBreath 5s ease-in-out infinite}
@@ -78,6 +80,7 @@ h2{font:500 clamp(38px,5vw,58px)/1.08 var(--display);letter-spacing:-.065em;marg
 .about-text{font-size:17px;line-height:1.95;color:#66685f}
 .about-text p{margin:0 0 22px}.about-text strong{font-weight:600;color:var(--ink)}
 .signature{font:italic 26px var(--serif);color:#8a9183;margin-top:35px}
+/* Yatay kaydırmalı anı albümü */
 .memory-album{margin-top:70px}
 .memory-heading{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:24px}
 .memory-heading h3{margin:8px 0 0;font:500 clamp(30px,4vw,46px)/1.1 var(--display);letter-spacing:-.055em}
@@ -94,6 +97,7 @@ h2{font:500 clamp(38px,5vw,58px)/1.08 var(--display);letter-spacing:-.065em;marg
 .memory-frame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s var(--ease)}
 .memory-card:hover .memory-frame img{transform:scale(1.025)}
 .memory-card figcaption{padding:13px 4px 0;font:italic 14px/1.5 var(--serif);color:#7c8075;text-align:center}
+/* İlgi alanı kartları */
 .interests{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .interest{min-height:195px;padding:25px;background:#f8f7f3;border:1px solid #ebeae4;border-radius:7px;transition:transform .5s var(--ease),background .4s,border .4s}
 .interest:hover{transform:translateY(-7px);background:#fff;border-color:#d7d9d0}
@@ -122,6 +126,7 @@ h2{font:500 clamp(38px,5vw,58px)/1.08 var(--display);letter-spacing:-.065em;marg
 .value-no{font:10px var(--mono);color:#9a9c92}
 .value h3{font:600 18px var(--display);letter-spacing:-.04em;margin:25px 0 10px}
 .value p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
+/* Kapanış ve iletişim alanı */
 .closing{padding:130px 0 115px;text-align:center;background:var(--white)}
 .closing h2{font-size:clamp(42px,7vw,78px);max-width:780px;margin:20px auto 25px}
 .closing h2 em{font:italic 500 1em var(--serif);color:#87917f}
@@ -166,6 +171,7 @@ a.contact-card:hover{border-color:#aab3a4;transform:translateY(-2px)}
 .copy-email{border:0;background:none;color:#777970;font:9px var(--mono);letter-spacing:.08em;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .copy-email:hover{color:var(--ink)}
 .contact-submit:disabled{opacity:.75;cursor:wait;transform:none}
+/* Alt bilgi alanı */
 footer{padding:24px 5.5%;background:#f0efe9}
 .footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;align-items:center;font:10px var(--mono);color:#92948b}
 .footer-brand{font:700 15px var(--display);color:var(--ink);letter-spacing:-.06em}
@@ -173,11 +179,13 @@ footer{padding:24px 5.5%;background:#f0efe9}
 .reveal.visible{opacity:1;transform:translateY(0)}
 .delay-1{transition-delay:.12s}.delay-2{transition-delay:.23s}.delay-3{transition-delay:.34s}
 @keyframes rotate{to{transform:rotate(360deg)}}@keyframes lineMove{0%{transform:translateX(-100%)}50%,100%{transform:translateX(100%)}}
+/* Tablet ve orta ekran yerleşimi */
 @media(max-width:800px){
  .hero-grid{grid-template-columns:1fr;gap:55px}.hero{padding-top:150px}.hero-card{min-height:300px;max-width:430px;width:100%;margin:auto;border-radius:150px 150px 8px 8px}
  .hero-index{display:none}.scroll-hint{bottom:22px}.about-grid{grid-template-columns:1fr;gap:25px}.side-quote{max-width:420px}
  .interests{grid-template-columns:repeat(2,1fr)}.value-grid{gap:22px}.contact-grid{grid-template-columns:1fr;gap:35px}
 }
+/* Telefon ekranı yerleşimi */
 @media(max-width:560px){
  .nav-wrap{padding:10px 4%}nav{padding:10px 13px}.nav-note{display:none}.menu-btn{display:block}
  .nav-links{display:none;position:absolute;top:62px;left:0;right:0;background:rgba(255,254,250,.97);padding:20px;border:1px solid var(--line);border-radius:12px;flex-direction:column;gap:18px}
@@ -189,10 +197,13 @@ footer{padding:24px 5.5%;background:#f0efe9}
  .time-year{padding:0}.time-content h3{font-size:16px}.project-card{padding:25px;grid-template-columns:1fr auto;gap:12px}.project-arrow{width:42px;height:42px}
  .value-grid{grid-template-columns:1fr;gap:28px}.value h3{margin:15px 0 8px}.closing{padding:90px 0}.contact{padding:80px 0}.contact-grid{gap:28px}.contact-form{padding:20px}.contact-fields{grid-template-columns:1fr}.field-wide{grid-column:auto}.contact-socials{grid-template-columns:1fr 1fr}.footer-inner{gap:10px;flex-wrap:wrap}
 }
+/* Hareket azaltma kullanıcı tercihini destekler */
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}.preloader{transition-duration:.01ms}}
+/* Mobil anılar albümü görünürlük düzeltmeleri */
 @media(max-width:560px){
  .memory-card{opacity:1!important;transform:none!important}
  .memory-frame img{object-position:center;-webkit-user-drag:none}
  .interest .icon{color:var(--accent)}
  .menu-btn{-webkit-tap-highlight-color:transparent}
 }
+/* Genel renk, yazı tipi ve geçiş değişkenleri */

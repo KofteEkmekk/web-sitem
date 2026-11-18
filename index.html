@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+<!-- Sayfa dili, mobil ölçekleme ve tarayıcı teması ayarları -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#f6f5f1">
+<!-- Arama motorları için kısa site açıklaması ve başlık -->
 <meta name="description" content="İnan — yazılım, teknoloji, oyun ve merak üzerine kişisel bir dijital alan.">
 <title>İnan — Merakın İzinde</title>
+<!-- Harici yazı tipi bağlantıları -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -208,6 +211,7 @@ footer{padding:24px 5.5%;background:#f0efe9}
 <noscript><style>.preloader{display:none!important}.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
+<!-- Ses efektleri ve sabit ilerleme çubuğu olmadan sayfanın üst katmanı -->
 <div class="preloader" id="preloader" role="status" aria-live="polite">
  <div class="loader-content">
   <div class="loader-emblem" aria-hidden="true"><span class="loader-orbit"></span><span class="loader-monogram">𝓲.</span></div>
@@ -217,7 +221,9 @@ footer{padding:24px 5.5%;background:#f0efe9}
   <p class="loader-status">SAYFA HAZIRLANIYOR</p>
  </div>
 </div>
+<!-- Hafif doku katmanı ve ekran üstü sayfa ilerleme çizgisi -->
 <div class="noise"></div><div class="progress" id="progress"></div>
+<!-- Ekranın üstünde sabit duran navigasyon alanı -->
 <header class="nav-wrap" id="navWrap">
 <nav>
  <a class="brand" href="#top">İnan<span>.</span></a>
@@ -228,7 +234,9 @@ footer{padding:24px 5.5%;background:#f0efe9}
  <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç">☰</button>
 </nav>
 </header>
+<!-- Sayfanın ana içeriği ve bölüm linkleri -->
 <main id="top">
+<!-- Giriş bölümü: kısa tanıtım ve soyut logo kartı -->
 <section class="hero">
  <div class="container hero-grid">
   <div>
@@ -244,6 +252,7 @@ footer{padding:24px 5.5%;background:#f0efe9}
  </div>
  <div class="scroll-hint">AŞAĞI KAYDIR <i></i></div><div class="hero-index">01 — 06</div>
 </section>
+<!-- Hakkımda bölümü: kişisel bilgi ve anı albümü -->
 <section class="about" id="about">
  <div class="container">
   <div class="section-head reveal"><div><div class="kicker">01 / Biraz ben</div><h2>Merak ettiğim<br>şeylerin peşindeyim.</h2></div><span class="section-number">ADANA · TÜRKİYE</span></div>
@@ -281,6 +290,7 @@ footer{padding:24px 5.5%;background:#f0efe9}
   </div>
  </div>
 </section>
+ <!-- İlgi alanları bölümü: kart şeklindeki kişisel ilgi alanları -->
 <section id="interests">
  <div class="container">
   <div class="section-head reveal"><div><div class="kicker">02 / İlgi alanları</div><h2>Zihnimi meşgul<br>eden dünyalar.</h2></div><span class="section-number">KEŞFETTİKLERİM</span></div>
@@ -294,6 +304,7 @@ footer{padding:24px 5.5%;background:#f0efe9}
   </div>
  </div>
 </section>
+<!-- Yolculuk bölümü: zaman çizelgesi -->
 <section class="journey" id="journey">
  <div class="container">
   <div class="section-head reveal"><div><div class="kicker">03 / Şu ana kadarki yol</div><h2>Bir şeyler<br>inşa ederek öğrenmek.</h2></div><span class="section-number">GELİŞİM SÜRECİNDE</span></div>
@@ -305,6 +316,7 @@ footer{padding:24px 5.5%;background:#f0efe9}
   </div>
  </div>
 </section>
+<!-- Üretim bölümü: öne çıkan GitHub projesi -->
 <section id="projects">
  <div class="container">
   <div class="section-head reveal"><div><a class="kicker" href="https://github.com/KofteEkmekk/Duyuru-Takibi" target="_blank" rel="noopener noreferrer" aria-label="GitHub deposunu aç">04 / Üzerinde çalıştıklarım</a><h2>Fikirden küçük<br>bir çözüme.</h2></div><span class="section-number">ÖNE ÇIKAN ÇALIŞMALAR</span></div>
@@ -314,6 +326,7 @@ footer{padding:24px 5.5%;background:#f0efe9}
   </a>
  </div>
 </section>
+<!-- Küçük prensipler bölümü -->
 <section class="values">
  <div class="container">
   <div class="section-head reveal"><div><div class="kicker">05 / Küçük prensipler</div><h2>Nasıl ilerlemeyi<br>seviyorum?</h2></div><span class="section-number">KİŞİSEL NOTLAR</span></div>
@@ -324,6 +337,7 @@ footer{padding:24px 5.5%;background:#f0efe9}
   </div>
  </div>
 </section>
+<!-- Kapanış çağrısı bölümü -->
 <section class="closing">
  <div class="container reveal">
   <div class="kicker">06 / Devamı gelecek</div>
@@ -331,6 +345,7 @@ footer{padding:24px 5.5%;background:#f0efe9}
   <p>Öğrenecek çok şey, denenecek çok fikir var.<br>Bu sayfa da zamanla benimle birlikte gelişecek.</p>
  </div>
 </section>
+<!-- İletişim bölümü: e-posta, konum, sosyal bağlantılar ve form -->
 <section class="contact" id="contact">
  <div class="container contact-grid">
   <div class="contact-info reveal">
@@ -366,12 +381,16 @@ footer{padding:24px 5.5%;background:#f0efe9}
  </div>
 </section>
 </main>
+<!-- Alt bilgi alanı -->
 <footer><div class="footer-inner"><a class="footer-brand" href="#top">İnan.</a><span>© 2026 Kamuran İnan Aydoğan · Tüm hakları saklıdır.</span><a href="#top">BAŞA DÖN ↑</a></div></footer>
+<!-- Sayfa davranışları: açılış ekranı, kaydırma, menü, galeri ve form -->
 <script>
+// Açılış ekranı öğesini ve süre hesaplamasını hazırlar
 const preloader = document.getElementById('preloader');
 const preloaderStartedAt = performance.now();
 let preloaderDismissed = false;
 
+// Açılış ekranını en az belirlenen süre gösterdikten sonra gizler
 function dismissPreloader() {
   if (preloaderDismissed) return;
   preloaderDismissed = true;
@@ -384,6 +403,7 @@ function dismissPreloader() {
   }, Math.max(0, minimumVisibleTime - elapsed));
 }
 
+// Sayfa yüklenince açılış ekranını; bekleme süresi dolarsa zorla gizler
 if (document.readyState === 'complete') {
   dismissPreloader();
 } else {
@@ -392,9 +412,11 @@ if (document.readyState === 'complete') {
 
 window.setTimeout(dismissPreloader, 4500);
 
+// Üst ilerleme çizgisi ve kaydırmaya bağlı gezinme durumu
 const progress = document.getElementById('progress');
 const nav = document.getElementById('navWrap');
 
+// Sayfanın kaçta kaçının kaydırıldığını ve menünün sıkışmış durumunu hesaplar
 function onScroll() {
   const max = document.documentElement.scrollHeight - innerHeight;
   progress.style.width = (max > 0 ? scrollY / max * 100 : 0) + '%';
@@ -404,6 +426,7 @@ function onScroll() {
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
+// Ekrana giren öğelere görünür animasyon sınıfı ekler
 const revealElements = document.querySelectorAll('.reveal');
 if (typeof window.IntersectionObserver === 'function') {
   const observer = new window.IntersectionObserver(entries => entries.forEach(entry => {
@@ -418,6 +441,7 @@ if (typeof window.IntersectionObserver === 'function') {
   revealElements.forEach(el => el.classList.add('visible'));
 }
 
+// Mobil menü düğmesini açıp kapatır ve bağlantılara basınca menüyü kapatır
 const menu = document.getElementById('menuBtn');
 const links = document.getElementById('navLinks');
 
@@ -431,9 +455,11 @@ links.querySelectorAll('a').forEach(link => link.addEventListener('click', () =>
   menu.textContent = '☰';
 }));
 
+// Yatay anı albümü öğelerini ve kontrollü kaydırma davranışını hazırlar
 const memoryTrack = document.getElementById('memoryTrack');
 const memoryCards = Array.from(document.querySelectorAll('.memory-card'));
 
+// Anılar görünür olduğunda albüm kartlarına görünürlük sınıfı ekler
 if (typeof window.IntersectionObserver === 'function') {
   const memoryObserver = new window.IntersectionObserver(entries => entries.forEach(entry => {
     if (entry.isIntersecting) entry.target.classList.add('is-visible');
@@ -443,6 +469,7 @@ if (typeof window.IntersectionObserver === 'function') {
   memoryCards.forEach(card => card.classList.add('is-visible'));
 }
 
+// Albümdeki merkeze en yakın kartı büyütür ve yan kartları karartır
 function updateMemoryFocus() {
   const trackRect = memoryTrack.getBoundingClientRect();
   const trackCenter = trackRect.left + trackRect.width / 2;
@@ -467,6 +494,7 @@ function updateMemoryFocus() {
   nearestCard.classList.add('is-active');
 }
 
+// Kaydırma, pencere yeniden boyutlandırma ve albüm okları için işleyiciler
 memoryTrack.addEventListener('scroll', updateMemoryFocus, { passive: true });
 window.addEventListener('resize', updateMemoryFocus);
 updateMemoryFocus();
@@ -479,21 +507,25 @@ document.getElementById('memoryNext').addEventListener('click', () => {
   memoryTrack.scrollBy({ left: memoryCards[0].getBoundingClientRect().width + 16, behavior: 'smooth' });
 });
 
+// İletişim formunu alır ve girişleri e-posta uygulaması için hazırlar
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', event => {
   event.preventDefault();
 
+// Form alanlarından ad, e-posta, konu ve mesaj değerlerini okur
   const formValues = new FormData(contactForm);
   const name = String(formValues.get('name') || '').trim();
   const email = String(formValues.get('email') || '').trim();
   const subject = String(formValues.get('subject') || '').trim() || 'Web sitesi iletişim formu';
   const message = String(formValues.get('message') || '').trim();
+// mailto bağlantısı için başlık ve gövde metnini kodlar
   const body = `Ad: ${name}\nE-posta: ${email}\n\n${message}`;
   const mailtoUrl = `mailto:inanaydgn001@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   const status = document.getElementById('contactStatus');
   const submitButton = contactForm.querySelector('.contact-submit');
+// Kullanıcıya e-posta uygulamasının açılma sürecini bildirir
   status.textContent = 'E-posta uygulaması açılıyor...';
   submitButton.disabled = true;
 
@@ -501,12 +533,14 @@ contactForm.addEventListener('submit', event => {
   mailLink.href = mailtoUrl;
   mailLink.click();
 
+// İkinci bir bildirim ile form düğmesini tekrar etkinleştirir
   window.setTimeout(() => {
     submitButton.disabled = false;
     status.textContent = 'E-posta uygulaması açılmadıysa adresi kopyalayıp e-posta gönderebilirsin.';
   }, 1200);
 });
 
+// E-posta adresini panoya kopyalar ve tarayıcı izni yoksa eski yöntemi kullanır
 document.getElementById('copyEmail').addEventListener('click', async () => {
   const status = document.getElementById('contactStatus');
 

@@ -1,3 +1,4 @@
+// Sayfanın kaydırma ilerlemesini ve sabit menü durumunu günceller
 const progress = document.getElementById('progress');
 const nav = document.getElementById('navWrap');
 
@@ -10,6 +11,7 @@ function onScroll() {
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
+// Görüntülenen bölümlere açılma animasyonu uygular
 const observer = new IntersectionObserver(entries => entries.forEach(entry => {
   if (entry.isIntersecting) {
     entry.target.classList.add('visible');
@@ -19,6 +21,7 @@ const observer = new IntersectionObserver(entries => entries.forEach(entry => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+// Mobil menü açma, kapama ve link seçimi davranışı
 const menu = document.getElementById('menuBtn');
 const links = document.getElementById('navLinks');
 
@@ -32,6 +35,7 @@ links.querySelectorAll('a').forEach(link => link.addEventListener('click', () =>
   menu.textContent = '☰';
 }));
 
+// Yatay anı albümü ve merkez odaklama mantığı
 const memoryTrack = document.getElementById('memoryTrack');
 const memoryCards = Array.from(document.querySelectorAll('.memory-card'));
 
@@ -41,6 +45,7 @@ if (memoryTrack) {
   }), { root: memoryTrack, threshold: .45 });
   memoryCards.forEach(card => memoryObserver.observe(card));
 
+  // Merkezdeki karta odaklanır, uzak kartları küçültür ve karartır
   function updateMemoryFocus() {
     const trackRect = memoryTrack.getBoundingClientRect();
     const trackCenter = trackRect.left + trackRect.width / 2;
@@ -79,6 +84,7 @@ if (memoryTrack) {
   });
 }
 
+// İletişim formu gönderimini mailto bağlantısına dönüştürür
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', event => {
@@ -107,6 +113,7 @@ contactForm.addEventListener('submit', event => {
   }, 1200);
 });
 
+// E-posta adresini modern veya fallback pano API'siyle kopyalar
 document.getElementById('copyEmail').addEventListener('click', async () => {
   const status = document.getElementById('contactStatus');
 
